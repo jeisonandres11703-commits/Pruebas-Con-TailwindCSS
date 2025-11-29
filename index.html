@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrolink - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-body">
+
+<div class="container-main">
+
+    <!-- NAV -->
+    <header class="site-header">
+        <nav class="site-nav">
+            <a class="brand">Agrolink</a>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Inicio</a>
+
+                <div class="dropdown">
+                    <button class="dropdown-btn">Servicios</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Veterinario</a></li>
+                        <li><a href="#">Asesorías agrícolas</a></li>
+                        <li><a href="#">Maquinarias</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/servicios.html">Ver todos</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown-btn">Categorías</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Frutas</a></li>
+                        <li><a href="#">Verduras</a></li>
+                        <li><a href="#">Hortalizas</a></li>
+                        <li><a href="#">Cereales</a></li>
+                        <li><a href="#">Más...</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <form class="search-form" role="search">
+                    <input type="search" placeholder="Buscar..." aria-label="Buscar">
+                    <button class="btn-primary" type="submit">Buscar</button>
+                </form>
+
+                <a href="login.html" class="nav-link">Cuenta</a>
+
+                <button id="menu-btn" class="menu-btn" aria-label="Abrir menú">
+                    <!-- ícono hamburguesa -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CARRUSEL -->
+    <section class="carousel-wrap">
+        <div id="carouselExampleInterval" class="carousel slide carousel-custom" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imag/imagen1.jpg" class="carousel-img" alt="imagen1">
+                </div>
+                <div class="carousel-item">
+                    <img src="imag/imagen2.jpg" class="carousel-img" alt="imagen2">
+                </div>
+                <div class="carousel-item">
+                    <img src="imag/imagen3.jpg" class="carousel-img" alt="imagen3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- TITULO -->
+    <div class="section-title">
+        <h2>Productos disponibles</h2>
+    </div>
+
+    <!-- GRID DE PRODUCTOS -->
+    <section class="products-grid" aria-label="Productos disponibles">
+        <article class="card product-card">
+            <img src="imag/queso.jpg" alt="queso" class="card-img">
+            <div class="card-body">
+                <h3>Queso fresco producido en Huila</h3>
+                <p>Queso orgánico de primera calidad.</p>
+            </div>
+            <ul class="card-meta">
+                <li>Precio: 3500</li>
+                <li>Presentación: LB</li>
+                <li>Neiva - Huila</li>
+            </ul>
+            <div class="card-actions">
+                <a href="#" class="btn-primary btn-full">Ver producto</a>
+            </div>
+        </article>
+
+        <article class="card product-card">
+            <img src="imag/platano.png" alt="platano" class="card-img">
+            <div class="card-body">
+                <h3>Plátano hartón Del Valle</h3>
+                <p>Plátano hartón de primera calidad orgánico.</p>
+            </div>
+            <ul class="card-meta">
+                <li>Precio: 70.000</li>
+                <li>Presentación: Lb, Kg, Bultos</li>
+                <li>Cali, Valle Del Cauca</li>
+            </ul>
+            <div class="card-actions">
+                <a href="#" class="btn-primary btn-full">Ver producto</a>
+            </div>
+        </article>
+
+        <article class="card product-card">
+            <img src="imag/frijoles.jpg" alt="frijoles" class="card-img">
+            <div class="card-body">
+                <h3>Frijol rojo pequeño</h3>
+                <p>Frijol rojo pequeño del valle.</p>
+            </div>
+            <ul class="card-meta">
+                <li>Precio: 4.000</li>
+                <li>Presentación: lb, kg, bultos</li>
+                <li>Cali, Valle Del Cauca</li>
+            </ul>
+            <div class="card-actions">
+                <a href="AGRO.HTML" class="btn-primary btn-full">Ver producto</a>
+            </div>
+        </article>
+
+        <article class="card product-card">
+            <img src="imag/tomate.jpg" alt="tomate" class="card-img">
+            <div class="card-body">
+                <h3>Tomate chonto</h3>
+                <p>Tomate chonto certificado BPA.</p>
+            </div>
+            <ul class="card-meta">
+                <li>Precio: 1.800</li>
+                <li>Presentación: lb, kg, canasta</li>
+                <li>Medellín, Antioquia</li>
+            </ul>
+            <div class="card-actions">
+                <a href="#" class="btn-primary btn-full">Ver producto</a>
+            </div>
+        </article>
+    </section>
+
+    <!-- DESTACADO -->
+    <section class="featured">
+        <h2>Producto destacado</h2>
+        <div class="featured-card">
+            <img src="imag/queso.jpg" alt="destacado" class="featured-img">
+            <div class="featured-body">
+                <h3>Queso fresco producido en Huila</h3>
+                <p>Queso orgánico de primera calidad, producido por pequeños productores locales.</p>
+                <a href="#" class="btn-primary">Ver producto</a>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <p>© 2025 Agrolink. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Tailwind en modo navegador (solo para desarrollo) -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</body>
+</html>
